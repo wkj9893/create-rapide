@@ -1,0 +1,31 @@
+{
+  "name": "create-rapide",
+  "version": "0.0.1",
+  "description": "create rapide app",
+  "main": "index.js",
+  "bin": {
+    "create-rapide": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wkj9893/create-rapide-app"
+  },
+  "author": "wkj",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "templates"
+  ],
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "build": "esbuild index.ts --bundle --minify --platform=node --external:prompts --outfile=index.js"
+  },
+  "dependencies": {
+    "prompts": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.2",
+    "@types/prompts": "^2.0.14",
+    "esbuild": "^0.12.15"
+  }
+}

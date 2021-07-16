@@ -1,0 +1,11 @@
+{
+  "name": "rapide-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "rapide"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "rapide": "latest"
+  }
+}
