@@ -34,7 +34,7 @@ async function main() {
         if(!confirm){
             return 
         }
-        fs.rmdirSync(projectPath)
+        fs.rmSync(projectPath,{ recursive: true, force: true })
     }
     fs.mkdirSync(projectPath,{recursive:true})
     const { framework } = await prompts({

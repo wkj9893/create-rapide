@@ -1,6 +1,6 @@
 {
   "name": "create-rapide",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "create rapide app",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wkj9893/create-rapide-app"
+    "url": "https://github.com/wkj9893/create-rapide"
   },
   "author": "wkj",
   "license": "MIT",
