@@ -78,12 +78,12 @@ async function main() {
 
     copy(path.resolve(__dirname, 'templates', template), projectPath)
 
-    const pkgManager = isPnpm ? 'pnpm' : isYarn ? 'yarn' : 'npm'
-
     console.log(`\nDone. Now run:\n`)
     if (projectPath !== cwd) {
         console.log(`  cd ${path.relative(cwd, projectPath)}`)
     }
+    console.log(userAgent)
+    console.log(process.env.npm_config_user_agent)
     if (isPnpm) {
         console.log('pnpm i')
         console.log('pnpm dev')
