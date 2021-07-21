@@ -9,6 +9,7 @@ const argv = process.argv.slice(2)
 const targetDir = argv[0]
 const userAgent = process.env.npm_config_user_agent
 const isYarn = userAgent && userAgent.startsWith('yarn')
+const isPnpm = userAgent && userAgent.startsWith('pnpm')
 
 async function main() {
     let projectName =
@@ -22,21 +23,21 @@ async function main() {
             })
         ).name
     const projectPath = path.resolve(cwd, projectName)
-    if(!fs.existsSync(projectPath)){
-        fs.mkdirSync(projectPath,{recursive:true})
+    if (!fs.existsSync(projectPath)) {
+        fs.mkdirSync(projectPath, { recursive: true })
     }
-    if(fs.readdirSync(projectPath).length > 0){
-        const {confirm} = await prompts({
-            type:'confirm',
-            name:'confirm',
-            message:`The target directory ${projectPath} is not empty. Remove existing files and continue?`,
+    if (fs.readdirSync(projectPath).length > 0) {
+        const { confirm } = await prompts({
+            type: 'confirm',
+            name: 'confirm',
+            message: `The target directory ${projectPath} is not empty. Remove existing files and continue?`,
         })
-        if(!confirm){
-            return 
+        if (!confirm) {
+            return
         }
-        fs.rmSync(projectPath,{ recursive: true, force: true })
+        fs.rmSync(projectPath, { recursive: true, force: true })
     }
-    fs.mkdirSync(projectPath,{recursive:true})
+    fs.mkdirSync(projectPath, { recursive: true })
     const { framework } = await prompts({
         type: 'select',
         name: 'framework',
@@ -77,14 +78,22 @@ async function main() {
 
     copy(path.resolve(__dirname, 'templates', template), projectPath)
 
-    const pkgManager = isYarn ? 'yarn' : 'npm'
+    const pkgManager = isPnpm ? 'pnpm' : isYarn ? 'yarn' : 'npm'
 
     console.log(`\nDone. Now run:\n`)
     if (projectPath !== cwd) {
         console.log(`  cd ${path.relative(cwd, projectPath)}`)
     }
-    console.log(`  ${pkgManager === 'yarn' ? `yarn` : `npm install`}`)
-    console.log(`  ${pkgManager === 'yarn' ? `yarn dev` : `npm run dev`}`)
+    if (isPnpm) {
+        console.log('pnpm i')
+        console.log('pnpm dev')
+    } else if (isYarn) {
+        console.log('yarn')
+        console.log('yarn dev')
+    } else {
+        console.log('npm install')
+        console.log('npm run dev')
+    }
     console.log()
 }
 
