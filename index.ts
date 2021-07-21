@@ -9,7 +9,6 @@ const argv = process.argv.slice(2)
 const targetDir = argv[0]
 const userAgent = process.env.npm_config_user_agent
 const isYarn = userAgent && userAgent.startsWith('yarn')
-const isPnpm = userAgent && userAgent.startsWith('pnpm')
 
 async function main() {
     let projectName =
@@ -82,12 +81,8 @@ async function main() {
     if (projectPath !== cwd) {
         console.log(`  cd ${path.relative(cwd, projectPath)}`)
     }
-    console.log(userAgent)
-    console.log(process.env.npm_config_user_agent)
-    if (isPnpm) {
-        console.log('pnpm i')
-        console.log('pnpm dev')
-    } else if (isYarn) {
+
+    if (isYarn) {
         console.log('yarn')
         console.log('yarn dev')
     } else {
