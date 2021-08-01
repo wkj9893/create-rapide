@@ -11,7 +11,7 @@ export default function App() {
         <>
             <h1>{time}</h1>
             <button onClick={() => setCount(prev => prev + 1)}>
-                Please Click Me 
+                Please Click Me
             </button>
             <h1>{count}</h1>
         </>

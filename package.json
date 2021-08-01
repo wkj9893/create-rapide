@@ -1,6 +1,6 @@
 {
   "name": "create-rapide",
-  "version": "0.0.4",
+  "version": "0.1.1",
   "description": "create rapide app",
   "main": "index.js",
   "bin": {

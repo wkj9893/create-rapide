@@ -1,17 +1,22 @@
 {
   "name": "rapide-project",
-  "version": "0.0.0",
   "scripts": {
     "dev": "rapide"
   },
   "dependencies": {
-    "react": "latest",
-    "react-dom": "latest"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "typescript": "latest",
-    "rapide": "latest"
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "typescript": "^4.3.5",
+    "rapide": "^0.2.0",
+    "rapide-react-refresh": "^0.0.1"
+  },
+  "rapide": {
+    "plugins": [
+      "rapide-react-refresh"
+    ]
   }
 }

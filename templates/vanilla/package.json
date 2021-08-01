@@ -1,10 +1,9 @@
 {
   "name": "rapide-project",
-  "version": "0.0.0",
   "scripts": {
     "dev": "rapide"
   },
   "devDependencies": {
-    "rapide": "latest"
+    "rapide": "^0.2.0"
   }
 }
