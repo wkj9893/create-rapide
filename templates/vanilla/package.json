@@ -4,6 +4,6 @@
     "dev": "rapide"
   },
   "devDependencies": {
-    "rapide": "^0.2.0"
+    "rapide": "^0.2.2"
   }
 }

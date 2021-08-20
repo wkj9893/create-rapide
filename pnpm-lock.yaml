@@ -1,23 +1,27 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/node': ^16.4.0
+  '@types/node': ^16.6.2
   '@types/prompts': ^2.0.14
-  esbuild: ^0.12.15
+  esbuild: ^0.12.21
   prompts: ^2.4.1
 
 dependencies:
   prompts: 2.4.1
 
 devDependencies:
-  '@types/node': 16.4.0
+  '@types/node': 16.6.2
   '@types/prompts': 2.0.14
-  esbuild: 0.12.15
+  esbuild: 0.12.21
 
 packages:
 
   /@types/node/16.4.0:
     resolution: {integrity: sha512-HrJuE7Mlqcjj+00JqMWpZ3tY8w7EUd+S0U3L1+PQSWiXZbOgyQDvi+ogoUxaHApPJq5diKxYBQwA3iIlNcPqOg==}
+    dev: true
+
+  /@types/node/16.6.2:
+    resolution: {integrity: sha512-LSw8TZt12ZudbpHc6EkIyDM3nHVWKYrAvGy6EAJfNfjusbwnThqjqxUKKRwuV3iWYeW/LYMzNgaq3MaLffQ2xA==}
     dev: true
 
   /@types/prompts/2.0.14:
@@ -26,8 +30,8 @@ packages:
       '@types/node': 16.4.0
     dev: true
 
-  /esbuild/0.12.15:
-    resolution: {integrity: sha512-72V4JNd2+48eOVCXx49xoSWHgC3/cCy96e7mbXKY+WOWghN00cCmlGnwVLRhRHorvv0dgCyuMYBZlM2xDM5OQw==}
+  /esbuild/0.12.21:
+    resolution: {integrity: sha512-7hyXbU3g94aREufI/5nls7Xcc+RGQeZWZApm6hoBaFvt2BPtpT4TjFMQ9Tb1jU8XyBGz00ShmiyflCogphMHFQ==}
     hasBin: true
     requiresBuild: true
     dev: true

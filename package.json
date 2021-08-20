@@ -1,6 +1,6 @@
 {
   "name": "create-rapide",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "create rapide app",
   "main": "index.js",
   "bin": {
@@ -17,14 +17,15 @@
     "templates"
   ],
   "scripts": {
-    "build": "esbuild index.ts --bundle --minify --platform=node --external:prompts --outfile=index.js"
+    "build": "esbuild index.ts --bundle --minify --platform=node --external:prompts --outfile=index.js",
+    "dev":"create-rapide"
   },
   "dependencies": {
     "prompts": "^2.4.1"
   },
   "devDependencies": {
-    "@types/node": "^16.4.0",
+    "@types/node": "^16.6.2",
     "@types/prompts": "^2.0.14",
-    "esbuild": "^0.12.15"
+    "esbuild": "^0.12.21"
   }
 }
