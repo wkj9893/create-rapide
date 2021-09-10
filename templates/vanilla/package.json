@@ -1,9 +1,10 @@
 {
   "name": "rapide-project",
   "scripts": {
-    "dev": "rapide"
+    "dev": "rapide",
+    "build":"rapide build"
   },
   "devDependencies": {
-    "rapide": "^0.2.2"
+    "rapide": "^0.2.3"
   }
 }

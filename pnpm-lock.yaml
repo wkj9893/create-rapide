@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@types/node': ^16.6.2
   '@types/prompts': ^2.0.14
-  esbuild: ^0.12.21
+  esbuild: ^0.12.26
   prompts: ^2.4.1
 
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 devDependencies:
   '@types/node': 16.6.2
   '@types/prompts': 2.0.14
-  esbuild: 0.12.21
+  esbuild: 0.12.26
 
 packages:
 
@@ -30,8 +30,8 @@ packages:
       '@types/node': 16.4.0
     dev: true
 
-  /esbuild/0.12.21:
-    resolution: {integrity: sha512-7hyXbU3g94aREufI/5nls7Xcc+RGQeZWZApm6hoBaFvt2BPtpT4TjFMQ9Tb1jU8XyBGz00ShmiyflCogphMHFQ==}
+  /esbuild/0.12.26:
+    resolution: {integrity: sha512-YmTkhPKjvTJ+G5e96NyhGf69bP+hzO0DscqaVJTi5GM34uaD4Ecj7omu5lJO+NrxCUBRhy2chONLK1h/2LwoXA==}
     hasBin: true
     requiresBuild: true
     dev: true
