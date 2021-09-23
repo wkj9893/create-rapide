@@ -60,11 +60,11 @@ async function main() {
     message: 'Pick a language',
     choices: [
       {
-        title: lightYellow('JavaScript'),
+        title: lightYellow('js'),
         value: 'js'
       },
       {
-        title: lightBlue(`TypeScript`),
+        title: lightBlue(`ts`),
         value: 'ts'
       }
     ]

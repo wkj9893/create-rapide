@@ -5,6 +5,6 @@
     "build":"rapide build"
   },
   "devDependencies": {
-    "rapide": "^0.2.3"
+    "rapide": "^0.2.7"
   }
 }

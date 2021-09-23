@@ -2,19 +2,19 @@
   "name": "rapide-project",
   "scripts": {
     "dev": "rapide",
-    "build":"rapide build"
+    "build": "rapide build"
   },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "rapide": "^0.2.3",
-    "rapide-react-refresh": "^0.1.0"
+    "rapide": "^0.2.7",
+    "rapide-react": "^0.0.1"
   },
   "rapide": {
     "plugins": [
-      "rapide-react-refresh"
+      "rapide-react"
     ]
   }
 }
