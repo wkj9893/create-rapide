@@ -1,6 +1,6 @@
 {
   "name": "create-rapide",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "create rapide app",
   "main": "index.js",
   "bin": {
@@ -23,7 +23,7 @@
     "prompts": "^2.4.1"
   },
   "devDependencies": {
-    "@types/node": "^16.9.6",
+    "@types/node": "^16.10.1",
     "@types/prompts": "^2.0.14",
     "esbuild": "^0.13.2"
   }

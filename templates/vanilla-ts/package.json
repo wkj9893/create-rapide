@@ -6,6 +6,6 @@
   },
   "devDependencies": {
     "typescript": "^4.4.3",
-    "rapide": "^0.2.7"
+    "rapide": "^0.3.0"
   }
 }

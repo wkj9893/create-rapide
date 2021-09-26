@@ -60,11 +60,11 @@ async function main() {
     message: 'Pick a language',
     choices: [
       {
-        title: lightYellow('js'),
+        title: lightYellow('javascript'),
         value: 'js'
       },
       {
-        title: lightBlue(`ts`),
+        title: lightBlue(`typescript`),
         value: 'ts'
       }
     ]
@@ -76,18 +76,18 @@ async function main() {
 
   console.log(`\n${lightGreen('ok')}  Now run:\n`)
   if (projectPath !== cwd) {
-    console.log(`cd ${path.relative(cwd, projectPath)}`)
+    console.log(`  cd ${path.relative(cwd, projectPath)}`)
   }
 
   if (isPnpm) {
-    console.log('pnpm install')
-    console.log('pnpm dev')
+    console.log('  pnpm install')
+    console.log('  pnpm dev')
   } else if (isYarn) {
-    console.log('yarn')
-    console.log('yarn dev')
+    console.log('  yarn')
+    console.log('  yarn dev')
   } else {
-    console.log('npm install')
-    console.log('npm run dev')
+    console.log('  npm install')
+    console.log('  npm run dev')
   }
   console.log()
 }

@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/node': ^16.9.6
+  '@types/node': ^16.10.1
   '@types/prompts': ^2.0.14
   esbuild: ^0.13.2
   prompts: ^2.4.1
@@ -10,20 +10,20 @@ dependencies:
   prompts: 2.4.1
 
 devDependencies:
-  '@types/node': 16.9.6
+  '@types/node': 16.10.1
   '@types/prompts': 2.0.14
   esbuild: 0.13.2
 
 packages:
 
-  /@types/node/16.9.6:
-    resolution: {integrity: sha512-YHUZhBOMTM3mjFkXVcK+WwAcYmyhe1wL4lfqNtzI0b3qAy7yuSetnM7QJazgE5PFmgVTNGiLOgRFfJMqW7XpSQ==}
+  /@types/node/16.10.1:
+    resolution: {integrity: sha512-4/Z9DMPKFexZj/Gn3LylFgamNKHm4K3QDi0gz9B26Uk0c8izYf97B5fxfpspMNkWlFupblKM/nV8+NA9Ffvr+w==}
     dev: true
 
   /@types/prompts/2.0.14:
     resolution: {integrity: sha512-HZBd99fKxRWpYCErtm2/yxUZv6/PBI9J7N4TNFffl5JbrYMHBwF25DjQGTW3b3jmXq+9P6/8fCIb2ee57BFfYA==}
     dependencies:
-      '@types/node': 16.9.6
+      '@types/node': 16.10.1
     dev: true
 
   /esbuild-android-arm64/0.13.2:
