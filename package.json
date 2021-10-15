@@ -20,11 +20,11 @@
     "build": "esbuild index.ts --bundle --platform=node --external:prompts --outfile=index.js"
   },
   "dependencies": {
-    "prompts": "^2.4.1"
+    "prompts": "^2.4.2"
   },
   "devDependencies": {
-    "@types/node": "^16.10.1",
+    "@types/node": "^16.11.0",
     "@types/prompts": "^2.0.14",
-    "esbuild": "^0.13.2"
+    "esbuild": "^0.13.6"
   }
 }
